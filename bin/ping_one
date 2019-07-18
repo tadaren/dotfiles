@@ -1,0 +1,2 @@
+#!/bin/bash
+ping $1 | while read line; do echo -n $line '                                         \r'; done

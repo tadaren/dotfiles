@@ -23,6 +23,6 @@ export PATH=~/bin:$PATH
 export LC_TIME="en-US.UTF-8"
 ###
 ### set env for rust
-source $HOME/.cargo/env
+#source $HOME/.cargo/env
 ### end set env for rust
 export PATH="/usr/local/opt/openssl/bin:$PATH"

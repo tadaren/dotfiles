@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'kristijanhusak/vim-hybrid-material'
+    Plug 'vim-airline/vim-airline'
 call plug#end()
 
 "エンコーディング

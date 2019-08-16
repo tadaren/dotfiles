@@ -144,6 +144,10 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+call plug#begin('~/.vim/plugged')
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+
 " for vim airline
 set laststatus=2
 let g:airline_powerline_fonts = 1

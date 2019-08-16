@@ -1,3 +1,9 @@
+"プラグイン
+call plug#begin('~/.vim/plugged')
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'kristijanhusak/vim-hybrid-material'
+call plug#end()
+
 "エンコーディング
 set encoding=utf-8
 scriptencoding utf-8
@@ -9,8 +15,8 @@ set number
 
 "色
 set background=dark
-let g:hybrid_use_iTerm_colors = 1
-colorscheme hybrid
+let g:hybrid_transparent_background = 1
+colorscheme hybrid_material
 
 "行番号の色や現在行の設定
 autocmd ColorScheme * highlight LineNr ctermfg=12
@@ -143,10 +149,6 @@ inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
-
-call plug#begin('~/.vim/plugged')
-    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-call plug#end()
 
 " for vim airline
 set laststatus=2

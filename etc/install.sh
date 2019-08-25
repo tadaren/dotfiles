@@ -25,3 +25,8 @@ download(){
         mv "dotfiles-master" "$DOTPATH"
     fi
 }
+
+deploy(){
+    cd "$DOTPATH"
+    make deploy
+}

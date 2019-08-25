@@ -30,3 +30,7 @@ deploy(){
     cd "$DOTPATH"
     make deploy
 }
+
+main(){
+    download && deploy
+}

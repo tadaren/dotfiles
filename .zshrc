@@ -111,3 +111,6 @@ bindkey -e
 # opam configuration
 test -r /Users/fujimoto/.opam/opam-init/init.zsh && . /Users/fujimoto/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+alias passgen="cat /dev/urandom | tr -dc '[:alnum:]' | head -c 10; echo ''"
+

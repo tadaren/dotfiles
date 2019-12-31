@@ -7,3 +7,4 @@ list:
 
 deploy:
 	@$(foreach file, $(DOTFILES), ln -svnf $(abspath $(file)) $(HOME)/$(file);)
+	@ln -svnf $(abspath prezto) $(HOME)/.zprezto;

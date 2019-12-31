@@ -114,3 +114,5 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 alias passgen="cat /dev/urandom | tr -dc '[:alnum:]' | head -c 10; echo ''"
 
+# PATHの重複を削除する
+typeset -U path PATH

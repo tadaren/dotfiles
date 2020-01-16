@@ -105,12 +105,15 @@ preexec_functions=($preexec_functions tabtitle_preexec)
 
 export PATH="/usr/local/opt/bison/bin:$PATH"
 export PATH="/usr/local/opt/flex/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/krb5/bin:$PATH"
+export PATH="/usr/local/opt/krb5/sbin:$PATH"
 
 bindkey -e
 
 # opam configuration
 test -r /Users/fujimoto/.opam/opam-init/init.zsh && . /Users/fujimoto/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 alias passgen="cat /dev/urandom | tr -dc '[:alnum:]' | head -c 10; echo ''"
 

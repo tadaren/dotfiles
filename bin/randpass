@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+len=14
+if [ $# -ne 0 ]; then
+    len=$1
+fi
+cat /dev/urandom | base64 | fold -w $len | head -n 1
